@@ -22,6 +22,12 @@
   background-position: center;
   background-size: cover;
 }
+.our-gallery--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hero-area__left--content {
   position: absolute;
   top: 15%;
@@ -64,11 +70,4 @@
   font-style: normal;
   font-weight: 600;
   line-height: 160%; /* 28.8px */
-}
-img {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 0;
-  vertical-align: top;
 }

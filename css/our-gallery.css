@@ -1,0 +1,59 @@
+.our-gallery-grid {
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+.our-gallery-grid {
+  width: 1140px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.our-gallery--wrapper h3 {
+  color: #000;
+  text-align: center;
+  margin-top: 130px;
+  /* Subtitle / Base */
+  font-family: "Josefin Sans";
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 55.9px */
+}
+.our-gallery--wrapper p {
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  opacity: 0.7;
+  width: 609px;
+}
+.our-gallery--btn {
+  width: 105px;
+  height: 27px;
+  color: #ff4b32;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin-bottom: 143px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 360px;
+  height: 330px;
+}
+.img4,
+.img5,
+.img6 {
+  width: 360px;
+  height: 230px;
+}
