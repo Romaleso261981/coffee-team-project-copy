@@ -1,8 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+
+/* Root styles */
+
+:root {
+  --white-color: #fff;
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
 /*Загальні стилі =================================================================================================================*/
 
 body {
-  font-family: "Rubik";
-  font-size: 0.875rem;
+  font-family: "Josefin Sans";
+  font-style: normal;
   color: #646d70;
 }
 .wrapper {
@@ -14,8 +27,8 @@ body {
 
 /*налаштування адаптиву*/
 
-[class*="__container"] {
-  max-width: 52rem;
+.container {
+  max-width: 80rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   margin: 0 auto;
@@ -46,3 +59,9 @@ body {
 .page {
   flex: 1 1 auto;
 }
+
+@import url("follow-us.css");
+@import url("hero-area.css");
+@import url("our-best-offer.css");
+@import url("our-gallery.css");
+@import url("update-news.css");
