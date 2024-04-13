@@ -1,0 +1,48 @@
+/*Загальні стилі =================================================================================================================*/
+
+body {
+  font-family: "Rubik";
+  font-size: 0.875rem;
+  color: #646d70;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+/*налаштування адаптиву*/
+
+[class*="__container"] {
+  max-width: 52rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin: 0 auto;
+}
+
+/*модулі*/
+
+.title {
+  font-family: "Merriweather";
+  color: #fff;
+  line-height: 130%;
+  font-size: 1.875rem;
+}
+.title--dark {
+  color: #222f33;
+}
+@media (max-width: 47.9988em) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+.text {
+  line-height: 185%;
+}
+.text p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.page {
+  flex: 1 1 auto;
+}
