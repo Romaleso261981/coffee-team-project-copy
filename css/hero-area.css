@@ -71,3 +71,24 @@
   font-weight: 600;
   line-height: 160%; /* 28.8px */
 }
+@media screen and (max-width: 1170px) {
+  .hero-area__left--content {
+    top: 30%;
+    left: 5%;
+    width: 424px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero-area__left--content {
+    top: 40%;
+    left: 5%;
+    width: 300px;
+  }
+
+  .hero-area__left {
+    width: 1%;
+  }
+  .hero-area__right {
+    width: 99%;
+  }
+}
