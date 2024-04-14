@@ -76,8 +76,6 @@
 }
 @media screen and (max-width: 450px) {
   .hero-area__left--content {
-    top: 40%;
-    left: 5%;
     width: 300px;
   }
 

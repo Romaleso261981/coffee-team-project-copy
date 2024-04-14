@@ -18,6 +18,11 @@ body {
   font-style: normal;
   color: #646d70;
 }
+
+.hide {
+  display: none;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: clip;
