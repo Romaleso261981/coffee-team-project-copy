@@ -1,7 +1,8 @@
-.follow-us {
+.footer {
   width: 100vw;
-  height: 650px;
-  background-image: url(../img/follow-us/bg.jpg);
+  height: 410px;
+  margin-top: 40px;
+  background-image: url(../img/footer/bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
