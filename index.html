@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/follow-us.css" />
     <link rel="stylesheet" href="css/update-news.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Coffee shop website</title>
   </head>
   <body>
@@ -97,25 +101,20 @@
             </div>
             <button class="our-gallery--btn">LOAD MORE</button>
           </div>
-          <!-- start slider -->
-          <div class="our-gallery__slider slider-materials swiper hide">
-            <!-- Additional required wrapper -->
-            <div class="our-gallery-slider__wrapper swiper-wrapper">
-              <!-- Slides -->
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image1.png" alt="img" />
+          <div class="our-gallery-slider swiper-container">
+            <h3>Our Gallery</h3>
+            <div class="image-slider__wrapper swiper-wrapper">
+              <div class="swiper-slide image-slider__slide">
+                <img src="img/our-gallery/Image1.png" alt="" />
               </div>
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image2.png" alt="img" />
+              <div class="image-slider__slide swiper-slide">
+                <img src="img/our-gallery/Image2.png" alt="" />
               </div>
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image3.png" alt="img" />
+              <div class="image-slider__slide swiper-slide">
+                <img src="img/our-gallery/Image3.png" alt="" />
               </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="slider-materials__pagination swiper-pagination"></div>
           </div>
-          <!-- end slider -->
         </section>
         <section class="follow-us">
           <div id="follow-us">
@@ -245,6 +244,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

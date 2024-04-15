@@ -121,8 +121,7 @@
 }
 @media screen and (max-width: 768px) {
   .footer-content__information,
-  .footer-content__categies,
-  .footer-content__social {
+  .footer-content__categies {
     display: none;
   }
   .footer-content {
@@ -135,5 +134,9 @@
 @media screen and (max-width: 450px) {
   .footer {
     padding: 0 10px;
+  }
+  .footer-content__social {
+    justify-content: center;
+    align-items: center;
   }
 }
