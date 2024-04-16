@@ -1,0 +1,104 @@
+.our-best-offer {
+  width: 1150px;
+  height: 740px;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.our-best-offer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.our-best-offer__content h2 {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 55.9px */
+  letter-spacing: 6.45px;
+}
+.our-best-offer__content p {
+  width: 506px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.7;
+}
+.our-best-offer__cards {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.our-best-offer__card {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+}
+.our-best-offer__card span {
+  color: #0c0d0c;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+.our-best-offer__card span::before {
+  content: url("../img/our-best-offer/$.svg");
+  margin-right: 5px;
+}
+.our-best-offer__card h3 {
+  margin-top: 20px;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: 3.6px;
+}
+.our-best-offer__card p {
+  margin-top: 20px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.7;
+}
+.our-best-offer__card button {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 1.6px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
