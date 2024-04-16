@@ -19,3 +19,7 @@ const swiper = new Swiper(".our-gallery-slider", {
     el: ".swiper-scrollbar"
   }
 });
+
+const closeButton = document.getElementById("close");
+const openButton = document.getElementById("open");
+const nobMenu = document.getElementById("nav");
