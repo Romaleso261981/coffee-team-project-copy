@@ -1,10 +1,9 @@
 .our-best-offer {
-  width: 1150px;
+  width: 100%;
   /* height: 740px; */
   margin-top: 140px;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
 }
 .our-best-offer__content {
   display: flex;
@@ -40,7 +39,6 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-top: 50px;
 }
 .our-best-offer__card {
   width: 350px;
@@ -101,4 +99,21 @@
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .our-best-offer__content {
+    padding: 0 40px;
+  }
+  .our-best-offer__cards {
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .our-best-offer__content p {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
 }
