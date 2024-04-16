@@ -21,9 +21,8 @@ const swiper = new Swiper(".our-gallery-slider", {
 });
 
 const closeButton = document.getElementById("close");
-const openButton = document.getElementById("open");
-const nobMenu = document.getElementById("nav");
-
+const openButton = document.getElementById("burger");
+const nobMenu = document.getElementById("mobile");
 
 const orderModal = document.getElementById("orderModal");
 const orderModalOpen = document.getElementById("order-modal-open");
@@ -40,4 +39,14 @@ orderModalClose.addEventListener("click", () => {
 
 btnSubmit.addEventListener("click", () => {
   orderModal.classList.remove("show");
+});
+
+// mob menu
+
+openButton.addEventListener("click", () => {
+  nobMenu.classList.add("open");
+});
+
+closeButton.addEventListener("click", () => {
+  nobMenu.classList.remove("open");
 });
