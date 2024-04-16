@@ -34,3 +34,7 @@ orderModalOpen.addEventListener("click", () => {
 orderModalClose.addEventListener("click", () => {
   orderModal.classList.remove("show");
 });
+
+btnSubmit.addEventListener("click", () => {
+  orderModal.classList.remove("show");
+});
