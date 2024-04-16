@@ -76,10 +76,41 @@
                 The coffee ideas shared by these generators are not cool at all,
                 as they are not a human being.
               </p>
-              <button class="hero-area__btn">By now</button>
+              <button id="order-modal-open" class="hero-area__btn">
+                By now
+              </button>
             </div>
           </div>
-          <div class="hero-area__right"></div>
+          <div id="orderModal" class="hero-area__orderModal">
+            <div class="hero-area__orderModal--content">
+              <h2>Order Now</h2>
+              <h4>
+                A coffee shop will help you to tell the audience what your
+                business.
+              </h4>
+              <form action="#" class="hero-area__form">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="hero-area__input"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="hero-area__input"
+                />
+                <input
+                  type="text"
+                  placeholder="Your Phone"
+                  class="hero-area__input"
+                />
+                <button id="hero-area__submit" class="hero-area__submit">
+                  Submit
+                </button>
+              </form>
+              <div id="hero-area__close" class="hero-area__close">x</div>
+            </div>
+          </div>
         </section>
         <section class="our-best-offer container">
           <div class="our-best-offer__wrapper">
