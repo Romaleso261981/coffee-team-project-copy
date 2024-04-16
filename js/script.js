@@ -20,7 +20,10 @@ const swiper = new Swiper(".our-gallery-slider", {
   }
 });
 
-// order modal
+const closeButton = document.getElementById("close");
+const openButton = document.getElementById("open");
+const nobMenu = document.getElementById("nav");
+
 
 const orderModal = document.getElementById("orderModal");
 const orderModalOpen = document.getElementById("order-modal-open");
