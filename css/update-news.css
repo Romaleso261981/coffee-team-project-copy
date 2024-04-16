@@ -53,8 +53,6 @@
 }
 .update-news__card--content h3 {
   color: #000;
-
-  /* Heading / Base */
   font-family: "Josefin Sans";
   font-size: 32px;
   font-style: normal;
@@ -68,7 +66,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 25.6px */
+  line-height: 160%;
 }
 .update-news__card--content button {
   color: #ff4b32;
@@ -76,7 +74,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 25.6px */
+  line-height: 160%;
 }
 .update-update-news__card--content img {
   height: 300px;
