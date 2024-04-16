@@ -19,3 +19,18 @@ const swiper = new Swiper(".our-gallery-slider", {
     el: ".swiper-scrollbar"
   }
 });
+
+// order modal
+
+const orderModal = document.getElementById("orderModal");
+const orderModalOpen = document.getElementById("order-modal-open");
+const orderModalClose = document.getElementById("hero-area__close");
+const btnSubmit = document.getElementById("hero-area__submit");
+
+orderModalOpen.addEventListener("click", () => {
+  orderModal.classList.add("show");
+});
+
+orderModalClose.addEventListener("click", () => {
+  orderModal.classList.remove("show");
+});
