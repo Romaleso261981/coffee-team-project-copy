@@ -1,21 +1,23 @@
 .our-gallery-grid {
-  margin: 50px auto;
-  margin-bottom: 0;
-}
-
-.our-gallery-grid {
   justify-content: center;
   align-items: center;
   width: 1140px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1.2fr 0.8fr;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+.image-slider__wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1170px) {
   .our-gallery-grid {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.2fr 0.8fr;
     grid-template-rows: repeat(3, 1fr);
   }
   .our-gallery--wrapper h3 {
@@ -29,7 +31,9 @@
 @media screen and (max-width: 768px) {
   .our-gallery-grid {
     width: 100%;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -60,7 +64,7 @@
   opacity: 0.7;
   width: 609px;
 }
-.our-gallery--btn {
+.our-gallery button {
   width: 105px;
   height: 27px;
   color: #ff4b32;
@@ -68,27 +72,13 @@
   font-family: "Open Sans";
   font-size: 18px;
   margin-bottom: 143px;
+  margin-top: 75px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
 }
 
-.img1,
-.img2,
-.img3 {
-  width: 360px;
-  height: 330px;
-}
-.img4,
-.img5,
-.img6 {
-  width: 360px;
-  height: 230px;
-}
-@media screen and (max-width: 1170px) {
-  .img4 {
-    height: 330px;
-  }
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 450px) {
   .our-gallery--wrapper {
@@ -113,8 +103,6 @@
 /* slider */
 .our-gallery-slider {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 .image-slider__slide {
   display: flex;
@@ -148,6 +136,7 @@
 @media screen and (max-width: 450px) {
   .our-gallery-slider {
     display: block;
+    margin-left: 40px auto;
   }
   .our-gallery-grid {
     display: none;
@@ -165,8 +154,7 @@
     padding: 30px 0 50px 0;
   }
   .image-slider__image img {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
   }
   .image-slider__image {
     text-align: center;
