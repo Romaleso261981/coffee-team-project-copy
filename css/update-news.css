@@ -92,3 +92,15 @@
 .update-img > p:nth-child(4) {
   color: #ff4b32;
 }
+@media screen and (max-width: 768px) {
+  .update-news__wrapper p {
+    width: 300px;
+  }
+  .update-news__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+}
