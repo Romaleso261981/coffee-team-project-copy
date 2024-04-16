@@ -136,7 +136,7 @@
 @media screen and (max-width: 450px) {
   .our-gallery-slider {
     display: block;
-    margin-left: 40px auto;
+    margin: 40px auto;
   }
   .our-gallery-grid {
     display: none;
