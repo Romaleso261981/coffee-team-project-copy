@@ -29,7 +29,7 @@ const orderModalOpen = document.getElementById("order-modal-open");
 const orderModalClose = document.getElementById("hero-area__close");
 const btnSubmit = document.getElementById("hero-area__submit");
 
-const name = document.getElementById("name");
+const msg = document.getElementById("textarea");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 
@@ -61,9 +61,10 @@ orderModalClose.addEventListener("click", () => {
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
-  const message = `email: ${email.value} message: ${email.value}  phone: ${phone.value}`;
+  const message = `email: ${email.value}  phone: ${phone.value} message: ${msg.value}`;
   sendMessage(message);
-  (email.value = ""), (email.value = ""), (phone.value = "");
+  (email.value = ""), (message.value = ""), (phone.value = "");
+
   toggleCard({ card: orderModal, classList: "show" });
 });
 
