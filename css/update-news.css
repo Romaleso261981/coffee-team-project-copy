@@ -75,6 +75,7 @@
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
+  margin-top: auto;
   font-weight: 600;
   line-height: 160%;
 }
@@ -91,6 +92,11 @@
 }
 .update-img > p:nth-child(4) {
   color: #ff4b32;
+}
+@media screen and (max-width: 1100px) {
+  .update-news__cards {
+    row-gap: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .update-news__wrapper p {
