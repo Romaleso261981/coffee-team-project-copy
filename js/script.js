@@ -29,26 +29,54 @@ const orderModalOpen = document.getElementById("order-modal-open");
 const orderModalClose = document.getElementById("hero-area__close");
 const btnSubmit = document.getElementById("hero-area__submit");
 
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+
+// toggle card function
+const toggleCard = function ({ card, classList }) {
+  card.classList.toggle(classList);
+};
+
+// function for sending message into telegram
+
+const sendMessage = async (message) => {
+  try {
+    // const URL = `${URI_API}${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text${message}`;
+    const URL = `https://api.telegram.org/bot7077738581:AAEqoAWJvox6ouc6foEcZNLTNWO6N8MSaNw/sendMessage?chat_id=-1001682516809&text=${message}`;
+    await fetch(URL);
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+// order modal
+
 orderModalOpen.addEventListener("click", () => {
-  orderModal.classList.add("show");
+  toggleCard({ card: orderModal, classList: "show" });
 });
 
 orderModalClose.addEventListener("click", () => {
-  orderModal.classList.remove("show");
+  toggleCard({ card: orderModal, classList: "show" });
 });
 
-btnSubmit.addEventListener("click", () => {
-  orderModal.classList.remove("show");
+btnSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  const message = `email: ${email.value} message: ${email.value}  phone: ${phone.value}`;
+  sendMessage(message);
+  console.log(message);
+  (email.value = ""), (email.value = ""), (phone.value = "");
+  toggleCard({ card: orderModal, classList: "show" });
 });
 
-// mob menu
+// mob menu modal
 
 openButton.addEventListener("click", () => {
-  nobMenu.classList.add("open");
+  toggleCard({ card: nobMenu, classList: "open" });
 });
 
 closeButton.addEventListener("click", () => {
-  nobMenu.classList.remove("open");
+  toggleCard({ card: nobMenu, classList: "open" });
 });
 
 // our-best-offer
@@ -66,24 +94,24 @@ const card2 = document.getElementById("card-2");
 const card3 = document.getElementById("card-3");
 
 openBtn1.addEventListener("click", () => {
-  card1.classList.toggle("show-card");
+  toggleCard({ card: card1, classList: "show-card" });
 });
 
 closeBtn1.addEventListener("click", () => {
-  card1.classList.toggle("show-card");
+  toggleCard({ card: card1, classList: "show-card" });
 });
 
 openBtn2.addEventListener("click", () => {
-  card2.classList.toggle("show-card");
+  toggleCard({ card: card2, classList: "show-card" });
 });
 
 closeBtn2.addEventListener("click", () => {
-  card2.classList.toggle("show-card");
+  toggleCard({ card: card2, classList: "show-card" });
 });
 openBtn3.addEventListener("click", () => {
-  card3.classList.toggle("show-card");
+  toggleCard({ card: card3, classList: "show-card" });
 });
 
 closeBtn3.addEventListener("click", () => {
-  card3.classList.toggle("show-card");
+  toggleCard({ card: card3, classList: "show-card" });
 });
