@@ -101,6 +101,13 @@
   margin-top: 20px;
   cursor: pointer;
 }
+@media screen and (max-width: 1145px) {
+  .our-best-offer__cards {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .our-best-offer__content {
@@ -109,7 +116,6 @@
   .our-best-offer__cards {
     flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
     margin-top: 40px;
   }
   .our-best-offer__content p {
