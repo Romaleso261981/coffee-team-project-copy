@@ -29,7 +29,7 @@ const orderModalOpen = document.getElementById("order-modal-open");
 const orderModalClose = document.getElementById("hero-area__close");
 const btnSubmit = document.getElementById("hero-area__submit");
 
-const name = document.getElementById("name");
+const msg = document.getElementById("textarea");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 
@@ -42,7 +42,6 @@ const toggleCard = function ({ card, classList }) {
 
 const sendMessage = async (message) => {
   try {
-    // const URL = `${URI_API}${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text${message}`;
     const URL = `https://api.telegram.org/bot7077738581:AAEqoAWJvox6ouc6foEcZNLTNWO6N8MSaNw/sendMessage?chat_id=-1001682516809&text=${message}`;
     await fetch(URL);
   } catch (e) {
@@ -62,10 +61,9 @@ orderModalClose.addEventListener("click", () => {
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
-  const message = `email: ${email.value} message: ${email.value}  phone: ${phone.value}`;
+  const message = `email: ${email.value}  phone: ${phone.value} message: ${msg.value}`;
   sendMessage(message);
-  console.log(message);
-  (email.value = ""), (email.value = ""), (phone.value = "");
+  (email.value = ""), (msg.value = ""), (phone.value = "");
   toggleCard({ card: orderModal, classList: "show" });
 });
 
