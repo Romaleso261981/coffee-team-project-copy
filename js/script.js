@@ -64,6 +64,7 @@ btnSubmit.addEventListener("click", (e) => {
   const message = `email: ${email.value}  phone: ${phone.value} message: ${msg.value}`;
   sendMessage(message);
   (email.value = ""), (message.value = ""), (phone.value = "");
+
   toggleCard({ card: orderModal, classList: "show" });
 });
 
