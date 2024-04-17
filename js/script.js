@@ -50,3 +50,40 @@ openButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   nobMenu.classList.remove("open");
 });
+
+// our-best-offer
+
+const openBtn1 = document.getElementById("card--detail-1");
+const openBtn2 = document.getElementById("card--detail-2");
+const openBtn3 = document.getElementById("card--detail-3");
+
+const closeBtn1 = document.getElementById("card--detail-1__close");
+const closeBtn2 = document.getElementById("card--detail-2__close");
+const closeBtn3 = document.getElementById("card--detail-3__close");
+
+const card1 = document.getElementById("card-1");
+const card2 = document.getElementById("card-2");
+const card3 = document.getElementById("card-3");
+
+openBtn1.addEventListener("click", () => {
+  card1.classList.toggle("show-card");
+});
+
+closeBtn1.addEventListener("click", () => {
+  card1.classList.toggle("show-card");
+});
+
+openBtn2.addEventListener("click", () => {
+  card2.classList.toggle("show-card");
+});
+
+closeBtn2.addEventListener("click", () => {
+  card2.classList.toggle("show-card");
+});
+openBtn3.addEventListener("click", () => {
+  card3.classList.toggle("show-card");
+});
+
+closeBtn3.addEventListener("click", () => {
+  card3.classList.toggle("show-card");
+});
