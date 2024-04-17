@@ -42,7 +42,6 @@ const toggleCard = function ({ card, classList }) {
 
 const sendMessage = async (message) => {
   try {
-    // const URL = `${URI_API}${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text${message}`;
     const URL = `https://api.telegram.org/bot7077738581:AAEqoAWJvox6ouc6foEcZNLTNWO6N8MSaNw/sendMessage?chat_id=-1001682516809&text=${message}`;
     await fetch(URL);
   } catch (e) {
@@ -64,7 +63,6 @@ btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const message = `email: ${email.value} message: ${email.value}  phone: ${phone.value}`;
   sendMessage(message);
-  console.log(message);
   (email.value = ""), (email.value = ""), (phone.value = "");
   toggleCard({ card: orderModal, classList: "show" });
 });
