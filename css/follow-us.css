@@ -46,6 +46,7 @@
   line-height: 130%;
 }
 .follow-us__content ul {
+  position: relative;
   display: flex;
   gap: 20px;
   justify-content: center;
