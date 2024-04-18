@@ -60,7 +60,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 36px */
+  line-height: 150%;
 }
 .our-best-offer__card span::before {
   content: url("../img/our-best-offer/$.svg");
@@ -73,7 +73,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
   letter-spacing: 3.6px;
 }
 .our-best-offer__card p {
@@ -129,6 +129,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .our-best-offer {
+    margin-top: 40px;
+  }
 }
 .card-detail {
   display: none;
