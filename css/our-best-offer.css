@@ -14,7 +14,7 @@
 }
 .our-best-offer__content h2 {
   color: #000;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 43px;
   font-style: normal;
   margin-left: 50px;
@@ -25,7 +25,7 @@
 .our-best-offer__content p {
   width: 506px;
   color: #000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-left: 50px;
   font-style: normal;
@@ -56,7 +56,7 @@
 }
 .our-best-offer__card span {
   color: #0c0d0c;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -69,7 +69,7 @@
 .our-best-offer__card h3 {
   margin-top: 20px;
   color: #000;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -79,7 +79,7 @@
 .our-best-offer__card p {
   margin-top: 20px;
   color: #000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -91,7 +91,7 @@
   height: 50px;
   background-color: #000;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -120,22 +120,27 @@
     margin-top: 40px;
   }
   .our-best-offer__content p {
-    width: 300px;
+    width: 100%;
+    margin-left: 0;
   }
+  .our-best-offer__content h2 {
+     margin-left: 0;
+     width: 100%;
+   }
+
 }
 @media screen and (max-width: 450px) {
+
 }
-
-/* card detail */
-
 .card-detail {
   display: none;
 }
 .card-detail h4 {
   color: #000;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
+  margin-left: 20px;
   font-weight: 600;
   line-height: 130%; /* 31.2px */
   letter-spacing: 3.6px;
@@ -143,7 +148,7 @@
 .card-detail p {
   margin-top: 20px;
   color: #000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +160,7 @@
   height: 50px;
   background-color: #000;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
