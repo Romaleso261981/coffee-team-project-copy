@@ -28,7 +28,7 @@
 .follow-us__content h3 {
   color: #ff4b32;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -37,7 +37,7 @@
 .follow-us__content p {
   color: #fff;
   text-align: center;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 43px;
   margin-top: 65px;
   margin-bottom: 60px;
@@ -46,7 +46,6 @@
   line-height: 130%;
 }
 .follow-us__content ul {
-  position: relative;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -56,7 +55,7 @@
 .follow-us__content--mail {
   color: #fff;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -67,10 +66,9 @@
   margin-right: 8px;
 }
 .follow-us__content--phone {
-  position: relative;
   color: #fff;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -78,9 +76,7 @@
 }
 .follow-us__content--phone::before {
   content: url(../img/follow-us/gmaillogo.svg);
-  position: absolute;
-  top: 0;
-  left: 517px;
+  margin-right: 8px;
 }
 .follow-us__social {
   padding-top: 60px;
@@ -90,14 +86,4 @@
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-}
-@media screen and (max-width: 768px) {
-  .follow-us__content--phone::before {
-    left: 184px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .follow-us__content--phone::before {
-    left: 2px;
-  }
 }
