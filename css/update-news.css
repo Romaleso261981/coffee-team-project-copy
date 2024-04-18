@@ -100,7 +100,7 @@
 }
 @media screen and (max-width: 768px) {
   .update-news__wrapper p {
-    width: 300px;
+    width: 100%;
   }
   .update-news__cards {
     display: flex;
@@ -109,4 +109,10 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .update-news__wrapper h2 {
+    margin-top: 60px;
+  }
+  .update-news__wrapper p {
+    margin-bottom: 30px;
+  }
 }
